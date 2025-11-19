@@ -11,7 +11,7 @@ void anotherway(int *ptr){
 }
 int main(){
     int arr[]={1,2,3,4,5,6};
-   // sample(arr);
+   // sample(arr); 
      //  cout<<arr[0];   // in this case we can seen that array is call by refe.
     //cout<<arr<<endl;   // an array is act like a pointer it is the pointer of first index.
     //cout<<*arr<<endl;   //dereferencing it will show the value of the array in the first index
