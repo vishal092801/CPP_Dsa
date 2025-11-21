@@ -13,15 +13,12 @@ n=min(int a, int b) // ye minimum element ko return krta hai
 
 #include<iostream>
 using namespace std;
-void subArray_Max(int *arr,int n){
+void subArray_Max2(int *arr,int n){
     int maxsum = INT_FAST16_MIN;
     for(int st=0;st<n;st++){
+        int currentSum=0;
         for(int end=st; end<n;end++){
-            int currentSum=0;
-            for(int i=st;i<=end;i++){
-                currentSum+=arr[i];
-                
-            }
+            currentSum+=arr[end];
             maxsum= max(maxsum,currentSum);
         }
     }
@@ -30,7 +27,7 @@ void subArray_Max(int *arr,int n){
 int main(){
     int arr[]={1,2,3,4,5};
     int n=sizeof(arr)/sizeof(int);
-    subArray_Max(arr,n);
+    subArray_Max2(arr,n);
     return 0;
 
 }
