@@ -9,7 +9,8 @@ using namespace std;
 } */
 //reverse using a function
 void rev(int a[],int size){
-    for(int i=size-1;i>=0;i--){
+    for(int i=size-1;i>=0;i--){  // this is not the efficient code its only print the values of the array 
+                                    // in the reverse form but in actual its not done.
         cout<<a[i]<<" ";
     }
 }
@@ -23,4 +24,6 @@ int main(){
         cin>>arr[i];
     }
     rev(arr,n);
+    for(i=0;i<n ; i++)
+        cout<<arr[i];
 }
